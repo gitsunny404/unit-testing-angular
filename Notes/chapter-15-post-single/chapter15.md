@@ -1,0 +1,1 @@
+# Shallow Integration test : testing with service and component

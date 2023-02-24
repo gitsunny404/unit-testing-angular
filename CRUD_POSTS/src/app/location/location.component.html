@@ -1,0 +1,37 @@
+<!-- <button >LOCATION</button> -->
+
+<!-- <select  [(ngModel)]="selectedValue" (ngModelChange)="readSelectedValue()">
+    <option value="1">1</option>
+    <option value="2">2</option>
+</select> -->
+
+<button (click)="choosenLocation($event)">Master Location</button>
+
+<h1>Location 1</h1>
+<select [(ngModel)]="chooseLocation1" (ngModelChange)="choosenLocation($event)" >
+    <option>LOCATION</option>
+    <option *ngFor="let location of masterLocations">{{location}}</option>
+</select>
+
+<h1>Location 2</h1>
+<select [(ngModel)]="chooseLocation2" (ngModelChange)="choosenLocation($event)">
+    <option>LOCATION</option>
+    <option *ngFor="let location of masterLocationFiltered1" >{{location}}</option>
+</select>
+
+<h1>Location 3</h1>
+<select [(ngModel)]="chooseLocation3" (ngModelChange)="choosenLocation($event)">
+    <option>LOCATION</option>
+    <option *ngFor="let location of masterLocationFiltered2" >{{location}}</option>
+</select>
+
+<button type="button" id="delhiButton" (click)="butDel()">
+    <img src="https://th.bing.com/th/id/R.4970ce76a48833cca41474dcd618caec?rik=kybahlPN7u6mEg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f4c9%2fokk%2f4c9okkxKi.png&ehk=J25X9MEfV3N9HIejefcKYX0E%2b1bv5%2buVkUfWIRuvUp0%3d&risl=&pid=ImgRaw&r=0" height="50" width="50" alt="imgae">
+    <span>Delhi</span>
+</button>
+
+<button type="button" id="kolButton" (click)="butKol()">
+    <img src="https://www.svgrepo.com/show/505195/hand-pulled-noodle.svg">
+    <span>Kolkata</span>
+</button>
+

@@ -1,0 +1,7 @@
+<p>posts-component works!</p>
+
+<button (click)="getPosts()">Get Method</button>
+
+<ul *ngFor=" let post of posts">
+    <li>{{post.id}} {{post.title}} {{post.body}} {{post.posts}}</li>
+</ul>
